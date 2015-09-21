@@ -46,8 +46,11 @@ public class MainActivity extends Activity {
                 new Button.OnClickListener(){
                     public void onClick (View v) {
                         Mytimer.cancel();
+                        timerHasStarted=false;
                         ThreeSecTimer.cancel();
                         ThreeSecTimer.start();
+                        CountText.setText("");
+                        CountButtonText.setText("HIT");
                         count=0;
 
 
