@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#DDECEF"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/CountButton"
+        android:background = "@drawable/countbutton"
+        android:layout_below="@+id/Countext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+
+
+    <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/StartButtonText"
+            android:id="@+id/StartButton"
+            android:textColor="#81612d"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:background="#E8D0A9"
+            android:layout_below="@+id/CountButton"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="50dp" />
+
+
+
+        <!-- Reset Button    -->
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ResetButtonText"
+            android:id="@+id/ResetButton"
+            android:textColor="#81612d"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:background="#E8D0A9"
+            android:layout_below="@+id/CountButton"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="200dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/TimerText"
+        android:id="@+id/Timertext"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="30dp"
+        android:textColor="#6D929B"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/CountText"
+            android:id="@+id/Countext"
+            android:textColor="#6D929B"
+            android:textSize="20dp"
+            android:layout_below="@+id/Timertext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#81612d"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="@string/CountButtonText"
+        android:id="@+id/Buttontext"
+        android:layout_alignBottom="@+id/CountButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+
+</RelativeLayout>
